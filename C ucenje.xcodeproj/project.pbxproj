@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		523E14662D52C365009A7F73 /* C ucenje */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C ucenje"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523E14692D52C365009A7F73 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		523E14732D5BA791009A7F73 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +58,18 @@
 		523E14682D52C365009A7F73 /* C ucenje */ = {
 			isa = PBXGroup;
 			children = (
+				523E14722D5BA776009A7F73 /* libs */,
 				523E14692D52C365009A7F73 /* main.c */,
 			);
 			path = "C ucenje";
+			sourceTree = "<group>";
+		};
+		523E14722D5BA776009A7F73 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				523E14732D5BA791009A7F73 /* header.h */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
