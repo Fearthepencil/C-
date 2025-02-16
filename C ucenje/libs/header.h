@@ -7,10 +7,10 @@
 
 #ifndef header_h
 #define header_h
-double calculate_area(double a, double b){
-    return a*b;
-}
-double calculate_perimeter(double a, double b){
-    return 2*(a+b);
-}
+double calculate_area(double a, double b);
+double calculate_perimeter(double a, double b);
+double calculate_days(double minutes);
+double calculate_years(double minutes);
+int flip_n_shift(int shift);
+void pay(double hours);
 #endif /* header_h */
