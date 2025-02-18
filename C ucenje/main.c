@@ -1,13 +1,14 @@
 /*
  Author: fearthepencil
  Purpose: ucenje
- Date: 11/02/25
- Time spent: 4h20min
+ Date: 18/02/25
+ Time spent: 5h30min
 */
 
 #include <stdio.h>
 #include <stdbool.h>
 #include "./libs/header.h"
+#include "./libs/games.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -57,8 +58,17 @@ int main(int argc, const char * argv[]) {
                 scanf("%lf",&hours);
                 pay(hours);
                 break;
+            case 5:
+                printf("Unesi max:");
+                int range;
+                scanf("%d",&range);
+                random_guesser(range);
             case 0:
                 istina = 0;
+                break;
+            default:
+                istina=30;
+                printf("Unesi normalan broj za meni majmune\n");
         }
     }
     return 0;

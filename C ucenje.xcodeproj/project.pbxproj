@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		523E146A2D52C365009A7F73 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E14692D52C365009A7F73 /* main.c */; };
 		523E14772D627351009A7F73 /* pay.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E14762D627351009A7F73 /* pay.c */; };
+		523E147A2D64A927009A7F73 /* games.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E14792D64A927009A7F73 /* games.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		523E14692D52C365009A7F73 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		523E14732D5BA791009A7F73 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
 		523E14762D627351009A7F73 /* pay.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pay.c; sourceTree = "<group>"; };
+		523E14782D64A927009A7F73 /* games.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = games.h; sourceTree = "<group>"; };
+		523E14792D64A927009A7F73 /* games.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = games.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				523E14722D5BA776009A7F73 /* libs */,
 				523E14692D52C365009A7F73 /* main.c */,
 				523E14762D627351009A7F73 /* pay.c */,
+				523E14792D64A927009A7F73 /* games.c */,
 			);
 			path = "C ucenje";
 			sourceTree = "<group>";
@@ -70,6 +74,7 @@
 		523E14722D5BA776009A7F73 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				523E14782D64A927009A7F73 /* games.h */,
 				523E14732D5BA791009A7F73 /* header.h */,
 			);
 			path = libs;
@@ -132,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523E147A2D64A927009A7F73 /* games.c in Sources */,
 				523E14772D627351009A7F73 /* pay.c in Sources */,
 				523E146A2D52C365009A7F73 /* main.c in Sources */,
 			);

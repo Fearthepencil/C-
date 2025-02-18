@@ -52,6 +52,7 @@ int menu(void){
     printf("2.Flip N Shift broj\n");
     printf("3.Izracunaj koliko je X sati u godinama\n");
     printf("4.Izracunaj koliko si zaradio za X sati\n");
+    printf("5.Igra pogadjanje brojeva\n");9
     printf("0.EXIT");
     scanf("%d",&choice);
     return choice;
