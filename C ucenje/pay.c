@@ -45,11 +45,16 @@ void pay(double hours){
     }
 }
 
-double calculate_area(double a, double b){
-    return a*b;
-}
-double calculate_perimeter(double a, double b){
-    return 2*(a+b);
+int menu(void){
+    printf("Choose your fighter: \n");
+    int choice;
+    printf("1.Biras omiljenu boju\n");
+    printf("2.Flip N Shift broj\n");
+    printf("3.Izracunaj koliko je X sati u godinama\n");
+    printf("4.Izracunaj koliko si zaradio za X sati\n");
+    printf("0.EXIT");
+    scanf("%d",&choice);
+    return choice;
 }
 double calculate_days(double minutes){
     return (minutes/60)/24;
