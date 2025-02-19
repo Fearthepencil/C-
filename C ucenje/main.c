@@ -1,8 +1,8 @@
 /*
  Author: fearthepencil
  Purpose: ucenje
- Date: 18/02/25
- Time spent: 5h30min
+ Date: 19/02/25
+ Time spent: 6h15min
 */
 
 #include <stdio.h>
@@ -63,6 +63,13 @@ int main(int argc, const char * argv[]) {
                 int range;
                 scanf("%d",&range);
                 random_guesser(range);
+                break;
+            case 6:
+                printf("Unesi range");
+                int range_prime;
+                scanf("%d",&range_prime);
+                prime(range_prime);
+                break;
             case 0:
                 istina = 0;
                 break;

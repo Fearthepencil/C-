@@ -12,4 +12,5 @@
 #include <stdlib.h>
 #include <time.h>
 void random_guesser(int range);
+void prime(int range);
 #endif /* games_h */

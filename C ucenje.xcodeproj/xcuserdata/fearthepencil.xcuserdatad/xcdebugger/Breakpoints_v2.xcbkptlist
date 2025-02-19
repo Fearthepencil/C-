@@ -36,5 +36,53 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1EE84755-AE0D-4AE1-A44E-E1179B3A1582"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C ucenje/games.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "prime(range)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "1EE84755-AE0D-4AE1-A44E-E1179B3A1582 - 3fde06e3180df499"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "prime"
+                  moduleName = "C ucenje"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fearthepencil/Documents/C%20ucenje/C%20ucenje/C%20ucenje/games.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "1EE84755-AE0D-4AE1-A44E-E1179B3A1582 - 3fde06e3180df499"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "prime"
+                  moduleName = "C ucenje"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fearthepencil/Documents/C%20ucenje/C%20ucenje/C%20ucenje/games.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
