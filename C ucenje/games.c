@@ -59,3 +59,28 @@ void prime(int range){
         else break;
     }
 }
+
+void rainfall(void){
+    double weather[5][12];
+    for(int i=0; i<5; i++){
+        for(int j=0; j<12; j++){
+            scanf("%lf",&weather[i][j]);
+        }
+    }
+    double avg_year = 0;
+    //yearly averages
+    //monthly averages
+    for(int i=0; i<5; i++){
+        double month = 0;
+        double year = 0;
+        for(int j=0; j<12; j++){
+            month+=weather[i][j];
+        }
+        year+=month;
+        printf("Monthly average is: %lf\n",month/12);
+        printf("Year %d total is: %lf\n", i+1, year);
+        avg_year+=month/12;
+    }
+    printf("Yearly average is: %lf\n",avg_year/5);
+    
+}

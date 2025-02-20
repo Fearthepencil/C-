@@ -13,4 +13,5 @@
 #include <time.h>
 void random_guesser(int range);
 void prime(int range);
+void rainfall(void);
 #endif /* games_h */

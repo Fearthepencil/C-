@@ -70,6 +70,10 @@ int main(int argc, const char * argv[]) {
                 scanf("%d",&range_prime);
                 prime(range_prime);
                 break;
+            case 7:
+                printf("Unesi kisu po mesecima za prethodnih 5 godina: ");
+                rainfall();
+                break;
             case 0:
                 istina = 0;
                 break;
