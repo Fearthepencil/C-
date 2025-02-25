@@ -84,3 +84,76 @@ void rainfall(void){
     printf("Yearly average is: %lf\n",avg_year/5);
     
 }
+int play_move(int player,char board[3][3]){
+    char move;
+    int index;
+    if(player==1){
+        move = 'x';
+    }
+    else move = 'o';
+    printf("Please play a move by typing a number 1-9\n");
+    scanf("%d",&index);
+    int index_row=0;
+    int index_column=0;
+    if(index<=3){
+        index_column=index;
+        index_row = 1;
+    }
+    else if(index>3 && index<=6){
+        index_column = index-3;
+        index_row = 2;
+    }
+    else if(index>6 && index<=9){
+        index_column = index-6;
+        index_row = 3;
+    }
+    else{
+        printf("Invalid move");
+        return -1;
+    }
+    
+    if(board[index_row][index_column] =='e'){
+        return index;
+    }
+    printf("Invalid move");
+    return -1;
+}
+
+char check_board(char board[3][3]){
+    int count = 0;
+    char winner = 'e';
+    for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
+            char winner = board[i][j];
+            if(j==0){
+                if(board[i][j]==board[i][j+1]==board[i][j+2]){
+                    return winner;
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+void tic_tac_toe(void){
+    int count = 0;
+    int result = 0;
+    char board[3][3] = {{'e','e','e'},
+        {'e','e','e'},
+        {'e','e','e'}};
+    while(count<9){
+        int move;
+        if(count%2==0){
+            move = play_move(1,board);
+            board[move-1]='x';
+        }
+        else {
+            move = play_move(2,board);
+            board[move-1]='o';
+        }
+        if(move==-1) return;
+        result = check_board(board);
+    }
+}
+
+

@@ -1,8 +1,8 @@
 /*
  Author: fearthepencil
  Purpose: ucenje
- Date: 19/02/25
- Time spent: 6h15min
+ Date: 25/02/25
+ Time spent: 7h10min
 */
 
 #include <stdio.h>
