@@ -2,7 +2,7 @@
  Author: fearthepencil
  Purpose: ucenje
  Date: 26/02/25
- Time spent: 8h35min
+ Time spent: 8h50min
 */
 
 #include <stdio.h>
