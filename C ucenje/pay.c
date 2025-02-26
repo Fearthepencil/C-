@@ -56,6 +56,7 @@ int menu(void){
     printf("6.Izlistaj proste brojeve od 0 do X\n");
     printf("7.Padavine prosek\n");
     printf("8.XOX igraj\n");
+    printf("9.String f-je\n");
     printf("0.EXIT\n");
     scanf("%d",&choice);
     return choice;

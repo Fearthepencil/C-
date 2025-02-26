@@ -31,6 +31,7 @@
 		523E14762D627351009A7F73 /* pay.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pay.c; sourceTree = "<group>"; };
 		523E14782D64A927009A7F73 /* games.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = games.h; sourceTree = "<group>"; };
 		523E14792D64A927009A7F73 /* games.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = games.c; sourceTree = "<group>"; };
+		523E147B2D6F4327009A7F73 /* stringis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringis.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 			children = (
 				523E14782D64A927009A7F73 /* games.h */,
 				523E14732D5BA791009A7F73 /* header.h */,
+				523E147B2D6F4327009A7F73 /* stringis.h */,
 			);
 			path = libs;
 			sourceTree = "<group>";

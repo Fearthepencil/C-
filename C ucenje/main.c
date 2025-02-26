@@ -1,17 +1,17 @@
 /*
  Author: fearthepencil
  Purpose: ucenje
- Date: 25/02/25
- Time spent: 7h10min
+ Date: 26/02/25
+ Time spent: 8h35min
 */
 
 #include <stdio.h>
 #include <stdbool.h>
 #include "./libs/header.h"
 #include "./libs/games.h"
+#include "./libs/stringis.h"
 
 int main(int argc, const char * argv[]) {
-    
     int shift;
     double minutes;
     double hours;
@@ -77,6 +77,41 @@ int main(int argc, const char * argv[]) {
             case 8:
                 tic_tac_toe();
                 break;
+            case 9:
+                printf("Izaberi jednu od str f-ja\n");
+                int choose = 0;
+                printf("1.Strlen\n2.StrConcat\n3.StrCmp\n");
+                scanf("%d",&choose);
+                switch (choose) {
+                    case 0:
+                        printf("Going back");
+                        break;
+                    case 1:{
+                        char string1[100];
+                        scanf("%s",string1);
+                        printf("Length is %d\n",strlength(string1));
+                        break;
+                        }
+                    case 2:
+                    {
+                        char string1[100];
+                        char string2[100];
+                        scanf("%s",string1);
+                        scanf("%s",string2);
+                        strcontact(string1, string2);
+                        break;
+                    }
+                    case 3:
+                    {
+                        char string1[100];
+                        char string2[100];
+                        scanf("%s",string1);
+                        scanf("%s",string2);
+                        printf("Strings are equal is: %d",streql(string1, string2));
+                        break;
+                    }
+                        
+                }
             case 0:
                 istina = 0;
                 break;
