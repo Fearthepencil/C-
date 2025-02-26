@@ -84,7 +84,7 @@ void rainfall(void){
     printf("Yearly average is: %lf\n",avg_year/5);
     
 }
-int play_move(int player,char board[3][3]){
+int play_move(int player,char board[9]){
     char move;
     int index;
     if(player==1){
@@ -93,66 +93,97 @@ int play_move(int player,char board[3][3]){
     else move = 'o';
     printf("Please play a move by typing a number 1-9\n");
     scanf("%d",&index);
-    int index_row=0;
-    int index_column=0;
-    if(index<=3){
-        index_column=index;
-        index_row = 1;
-    }
-    else if(index>3 && index<=6){
-        index_column = index-3;
-        index_row = 2;
-    }
-    else if(index>6 && index<=9){
-        index_column = index-6;
-        index_row = 3;
-    }
+    if(index>=1 && index<=9) printf("Playing move...\n");
     else{
         printf("Invalid move");
         return -1;
     }
-    
-    if(board[index_row][index_column] =='e'){
+    if(board[index-1] =='e'){
         return index;
     }
     printf("Invalid move");
     return -1;
 }
 
-char check_board(char board[3][3]){
-    int count = 0;
-    char winner = 'e';
-    for(int i=0; i<3; i++){
-        for(int j=0; j<3; j++){
-            char winner = board[i][j];
-            if(j==0){
-                if(board[i][j]==board[i][j+1]==board[i][j+2]){
-                    return winner;
+char check_board(char board[9]){
+    for(int i=0; i<9; i++){
+        if(board[i]!='e'){
+            if(i==0 || i==3 || i==6){
+                if(board[i]==board[i+1] && board[i]==board[i+2]){
+                    return board[i];
+                }
+            }
+            if(i==0 || i==1 || i==2){
+                if(board[i]==board[i+3] && board[i]==board[i+6]){
+                    return board[i];
+                }
+            }
+            if(i==0){
+                if(board[i]==board[i+4] && board[i]==board[i+8]){
+                    return board[i];
+                }
+            }
+            if(i==2){
+                if(board[i]==board[i+2] && board[i]==board[i+4]){
+                    return board[i];
                 }
             }
         }
     }
-    return 0;
+    return 'e';
+}
+
+void draw_board(char board[9]){
+    for(int i=0; i<9; i++){
+        if(i<3){
+            printf(" %c ",board[i]);
+            continue;
+        }
+        if(i==3) printf("\n");
+        if(i<6){
+            printf(" %c ",board[i]);
+            continue;
+        }
+        if(i==6) printf("\n");
+        if(i<9){
+            printf(" %c ",board[i]);
+            continue;
+        }
+    }
+    printf("\n");
 }
 
 void tic_tac_toe(void){
     int count = 0;
     int result = 0;
-    char board[3][3] = {{'e','e','e'},
-        {'e','e','e'},
-        {'e','e','e'}};
+    char board[9] = {'e','e','e',
+        'e','e','e',
+        'e','e','e'};
+    draw_board(board);
     while(count<9){
-        int move;
+        int move=-1;
         if(count%2==0){
             move = play_move(1,board);
+            if(move==-1) continue;
             board[move-1]='x';
+            draw_board(board);
         }
         else {
             move = play_move(2,board);
+            if(move==-1) continue;
             board[move-1]='o';
+            draw_board(board);
         }
-        if(move==-1) return;
         result = check_board(board);
+        if(result=='x'){
+            printf("Player 1 WON!\n");
+            return;
+        }
+        if(result=='o'){
+            printf("Player 2 WON!\n");
+            return;
+        }
+        count++;
     }
 }
 

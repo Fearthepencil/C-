@@ -74,6 +74,9 @@ int main(int argc, const char * argv[]) {
                 printf("Unesi kisu po mesecima za prethodnih 5 godina: ");
                 rainfall();
                 break;
+            case 8:
+                tic_tac_toe();
+                break;
             case 0:
                 istina = 0;
                 break;
