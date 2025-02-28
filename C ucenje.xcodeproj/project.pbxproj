@@ -10,6 +10,7 @@
 		523E146A2D52C365009A7F73 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E14692D52C365009A7F73 /* main.c */; };
 		523E14772D627351009A7F73 /* pay.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E14762D627351009A7F73 /* pay.c */; };
 		523E147A2D64A927009A7F73 /* games.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E14792D64A927009A7F73 /* games.c */; };
+		523E147D2D71DE1A009A7F73 /* strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 523E147C2D71DE1A009A7F73 /* strings.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		523E14782D64A927009A7F73 /* games.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = games.h; sourceTree = "<group>"; };
 		523E14792D64A927009A7F73 /* games.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = games.c; sourceTree = "<group>"; };
 		523E147B2D6F4327009A7F73 /* stringis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringis.h; sourceTree = "<group>"; };
+		523E147C2D71DE1A009A7F73 /* strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strings.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				523E14692D52C365009A7F73 /* main.c */,
 				523E14762D627351009A7F73 /* pay.c */,
 				523E14792D64A927009A7F73 /* games.c */,
+				523E147C2D71DE1A009A7F73 /* strings.c */,
 			);
 			path = "C ucenje";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523E147D2D71DE1A009A7F73 /* strings.c in Sources */,
 				523E147A2D64A927009A7F73 /* games.c in Sources */,
 				523E14772D627351009A7F73 /* pay.c in Sources */,
 				523E146A2D52C365009A7F73 /* main.c in Sources */,

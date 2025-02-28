@@ -10,6 +10,7 @@
 #include "./libs/header.h"
 #include "./libs/games.h"
 #include "./libs/stringis.h"
+#include <string.h>
 
 int main(int argc, const char * argv[]) {
     int shift;
@@ -80,7 +81,7 @@ int main(int argc, const char * argv[]) {
             case 9:
                 printf("Izaberi jednu od str f-ja\n");
                 int choose = 0;
-                printf("1.Strlen\n2.StrConcat\n3.StrCmp\n");
+                printf("1.Strlen\n2.StrConcat\n3.StrCmp\n4.BubbleSort\n");
                 scanf("%d",&choose);
                 switch (choose) {
                     case 0:
@@ -110,7 +111,19 @@ int main(int argc, const char * argv[]) {
                         printf("Strings are equal is: %d",streql(string1, string2));
                         break;
                     }
-                        
+                    case 4:{
+                        char* string[100];
+                        char current[100];
+                        int i = 0;
+                        printf("Input strings, input exit when you've had enough\n");
+                        while(strcmp(current,"exit")!=0){
+                            scanf("%s",current);
+                            string[i] = malloc(100);
+                            strcpy(string[i],current);
+                            i++;
+                        }
+                        bubbleSort(string);
+                    }
                 }
             case 0:
                 istina = 0;
